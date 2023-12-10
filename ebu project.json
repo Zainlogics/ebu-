@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "",
+      "display_name": ""
+    },
+    "language_info": {
+      "name": ""
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "import pandas as pd\nimport matplotlib.pyplot as plt\n\n# Sample data representing Amazon product prices and ratings\namazon_products = {\n    \"Price\": [50, 60, 70, 80, 90],\n    \"Rating\": [3.5, 4.2, 3.8, 4.5, 3.9]\n}\n\n# Creating a Pandas DataFrame to hold the Amazon product data\namazon_df = pd.DataFrame(amazon_products)\n\n# Extracting prices and ratings for plotting\nproduct_prices = amazon_df['Price']\nproduct_ratings = amazon_df['Rating']\n\n# Creating a scatter plot to visualize the relationship between price and rating\nplt.figure(figsize=(8, 6))\nplt.scatter(product_prices, product_ratings, alpha=0.5)\nplt.title('Relationship between Price and Rating of Amazon Products')\nplt.xlabel('Price ($)')\nplt.ylabel('Rating')\nplt.grid(True)\nplt.show()",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
